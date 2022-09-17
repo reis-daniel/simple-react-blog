@@ -20,6 +20,9 @@ h1, h2, h3, h4, h5, h6,  p, li, a{
     height: 2.5rem;
     border: 3px solid #6fcf97;
     border-radius: 0.75rem;
+    &:hover{
+            background-color: #a8debf;
+    }
 }
 .basic-container{
     padding: 2rem 6rem;
