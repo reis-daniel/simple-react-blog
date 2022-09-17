@@ -12,7 +12,7 @@ const blogData = [
   {
     id: 1,
     title: "My Plants",
-    published_date: "5.06.21",
+    published_date: "05.06.21",
     author: "John Doe",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, inventore!",

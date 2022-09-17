@@ -20,6 +20,9 @@ export default function Blog() {
 
 const BlogArticles = styled.div`
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 4rem;
+  gap: 8rem;
+  margin-top: 3rem;
 `;

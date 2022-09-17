@@ -10,7 +10,7 @@ export default function Article(props) {
       <img
         className="article-image"
         src={props.blogData.img_url}
-        alt="article image"
+        alt={`${props.blogData.title}`}
       />
       <div className="article-info-container">
         <h2 className="article-headline">{props.blogData.title}</h2>
@@ -27,10 +27,12 @@ export default function Article(props) {
 const ArticleStyled = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
   .article-image {
     height: 18rem;
-    width: 22rem;
+    width: 100%;
     border-radius: 0.6rem;
     object-fit: cover;
     object-position: center;
@@ -42,7 +44,10 @@ const ArticleStyled = styled.div`
   .article-info-container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 1rem;
+    width: 100%;
     padding-left: 0.5rem;
   }
 `;
