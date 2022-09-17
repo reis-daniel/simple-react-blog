@@ -10,10 +10,11 @@ import ErrorPage from "./Pages/ErrorPage";
 
 // Styled Components
 import GlobalStyle from "./Components/GlobalStyle";
+import styled from "styled-components";
 
 function App() {
   return (
-    <>
+    <AppStyled className="app">
       <GlobalStyle />
       <Navbar />
       <Routes>
@@ -22,8 +23,12 @@ function App() {
         <Route path="/blog/:id" element={<ArticleDetail />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-    </>
+    </AppStyled>
   );
 }
 
 export default App;
+
+const AppStyled = styled.div`
+  height: 100vh;
+`;
